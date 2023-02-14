@@ -1,0 +1,59 @@
+@import "../css/variables.scss";
+
+.join-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: $secondColor;
+
+  .join-container {
+    width: 700px;
+    height: 100%;
+    background-color: $fontLightColor;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+
+    h1 {
+      color: $mainColor;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .join-contents {
+      dl {
+        margin-bottom: 30px;
+        dt {
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        dd {
+          width: 100%;
+          font-size: 14px;
+          font-weight: lighter;
+          background-color: $secondColor;
+          padding: 30px 20px;
+          color: #555;
+        }
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      .join-btn {
+        margin-top: 20px;
+        width: 100%;
+        padding: 14px 0;
+        border-radius: 5px;
+        border: none;
+        background-color: $mainColor;
+        color: $fontLightColor;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

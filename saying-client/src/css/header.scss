@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: right;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .user-info {
+    position: relative;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+      cursor: pointer;
+      span {
+        font-size: 20px;
+      }
+    }
+    .user-menus {
+      width: 100%;
+      background-color: $secondColor;
+      padding: 20px 10px;
+      position: absolute;
+      top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

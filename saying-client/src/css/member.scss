@@ -1,0 +1,112 @@
+@import "./variables.scss";
+
+.member-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: $secondColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .member-container {
+    width: 450px;
+    min-height: 682px;
+    background-color: $fontLightColor;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 30px;
+
+    h1 {
+      color: $mainColor;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .easy-container {
+      margin-bottom: 50px;
+      p {
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        li {
+          width: 100%;
+          font-weight: 500;
+          color: $fontLightColor;
+          padding: 12px 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+          border-radius: 5px;
+
+          span {
+            font-size: 26px;
+          }
+
+          &.google-login {
+            background-color: #4286f4;
+          }
+          &.github-login {
+            background-color: #181717;
+          }
+        }
+      }
+
+      .or {
+        position: relative;
+        width: 100%;
+        color: $secondColor;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 160px;
+          height: 1px;
+          background-color: $secondColor;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          right: 0;
+          width: 160px;
+          height: 1px;
+          background-color: $secondColor;
+        }
+      }
+    }
+  }
+
+  .email-container {
+    p {
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    .login-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px 0;
+      border-radius: 5px;
+      border: none;
+      background-color: $mainColor;
+      color: $fontLightColor;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}
