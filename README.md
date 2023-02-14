@@ -1,7 +1,7 @@
 # yugyung saying
 
 
-## 사용한 기술
+## 사용한 기술과 기능
 [노션](https://good-wolverine-890.notion.site/792dbb9e897d4d779707df4d2a0929c0)
 
 ## 디자인 참고
